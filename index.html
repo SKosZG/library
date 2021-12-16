@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js" defer></script>
+</head>
+<body>
+    <h2>Popup Form</h2>
+<p>Click on the button at the bottom of this page to open the login form.</p>
+<p>Note that the button and the form is fixed - they will always be positioned to the bottom of the browser window.</p>
+
+<button class="open-button" onclick="openForm()">Open Form</button>
+
+    <div class="form-popup" id="myForm">
+        <form action="#" class="form-container">
+            <h1>Add Book</h1>
+            
+            <label for="title"><b>Title</b></label>
+            <input type="text" placeholder="Enter Title" name="title" id="title" required>
+
+            <label for="author"><b>Author</b></label>
+            <input type="text" placeholder="Enter Author" name="author" id="author" required>
+
+            <label for="pages"><b>Pages</b></label>
+            <input type="text" placeholder="Enter Number of Pages" name="pages" id="pages"  required>
+
+            <label for="read"><b>Read status</b></label>
+            <input type="text" placeholder="Read or Not Read" name="read" id="read" required>
+
+            <button type="submit" class="btn" id="addBtn">Add</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+
+    </div>
+</body>
+</html>
